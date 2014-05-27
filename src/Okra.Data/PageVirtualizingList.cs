@@ -119,7 +119,7 @@ namespace Okra.Data
             // Validate that the arguments are within range
 
             if (count < 0)
-                throw new ArgumentOutOfRangeException(ResourceHelper.GetErrorResource("Exception_ParameterOutOfRange_CountMustBeZeroOrPositive"));
+                throw new ArgumentOutOfRangeException(ResourceHelper.GetErrorResource("Exception_ArgumentOutOfRange_ParameterMustBeZeroOrPositive"));
 
             if (pageSize < 1)
                 throw new ArgumentOutOfRangeException(ResourceHelper.GetErrorResource("Exception_ArgumentOutOfRange_ParameterMustBePositive"));

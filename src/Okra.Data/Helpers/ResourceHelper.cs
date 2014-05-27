@@ -6,7 +6,7 @@ namespace Okra.Data.Helpers
     {
         // *** Constants ***
 
-        private const string ERROR_RESOURCEMAP = "Okra.Core/Errors";
+        private const string RESOURCEMAP_ERROR = "Okra.Data/Errors";
 
         // *** Static Fields ***
 
@@ -17,7 +17,11 @@ namespace Okra.Data.Helpers
         public static string GetErrorResource(string resourceName)
         {
             if (errorResourceLoader == null)
-                errorResourceLoader = ResourceLoader.GetForViewIndependentUse(ERROR_RESOURCEMAP);
+                errorResourceLoader = ResourceLoader.GetForViewIndependentUse(RESOURCEMAP_ERROR);
+
+            string s = errorResourceLoader.GetString(resourceName);
+            if (string.IsNullOrEmpty(s))
+                throw new System.Exception(resourceName);
 
             return errorResourceLoader.GetString(resourceName);
         }

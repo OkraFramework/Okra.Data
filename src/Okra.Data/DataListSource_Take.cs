@@ -13,7 +13,7 @@ namespace Okra.Data
         // NB: 'sourceCount' holds the last known value - if this gets out of sync with the source then this is because there
         //     is nobody observing the changes to the collection and any new observers will need to resync first by calling GetCountAsync()
         private int sourceCount;
-
+        
         // *** Constructors ***
 
         public DataListSource_Take(IDataListSource<T> source, int count)

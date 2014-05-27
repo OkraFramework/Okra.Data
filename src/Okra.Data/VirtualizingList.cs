@@ -71,7 +71,7 @@ namespace Okra.Data
             // Validate that the index is within range
 
             if (count < 0)
-                throw new ArgumentOutOfRangeException(ResourceHelper.GetErrorResource("Exception_ParameterOutOfRange_CountMustBeZeroOrPositive"));
+                throw new ArgumentOutOfRangeException(ResourceHelper.GetErrorResource("Exception_ArgumentOutOfRange_ParameterMustBeZeroOrPositive"));
 
             // Update the count
 
