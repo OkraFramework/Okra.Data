@@ -1,4 +1,5 @@
-﻿using Windows.ApplicationModel.Resources;
+﻿using System;
+using Windows.ApplicationModel.Resources;
 
 namespace Okra.Data.Helpers
 {
@@ -7,6 +8,7 @@ namespace Okra.Data.Helpers
         // *** Constants ***
 
         private const string RESOURCEMAP_ERROR = "Okra.Data/Errors";
+        private const string RESOURCE_NOT_FOUND_ERROR = "Exception_ArgumentException_ResourceStringNotFound";
 
         // *** Static Fields ***
 
@@ -19,11 +21,12 @@ namespace Okra.Data.Helpers
             if (errorResourceLoader == null)
                 errorResourceLoader = ResourceLoader.GetForViewIndependentUse(RESOURCEMAP_ERROR);
 
-            string s = errorResourceLoader.GetString(resourceName);
-            if (string.IsNullOrEmpty(s))
-                throw new System.Exception(resourceName);
+            string errorResource = errorResourceLoader.GetString(resourceName);
 
-            return errorResourceLoader.GetString(resourceName);
+            if (string.IsNullOrEmpty(errorResource) && resourceName != RESOURCE_NOT_FOUND_ERROR)
+                throw new ArgumentException(GetErrorResource(RESOURCE_NOT_FOUND_ERROR));
+
+            return errorResource;
         }
     }
 }
