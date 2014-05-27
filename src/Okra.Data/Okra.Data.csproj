@@ -41,7 +41,28 @@
     <TargetPlatform Include="Windows, Version=8.1" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataListPageResult.cs" />
+    <Compile Include="DataListSource.cs" />
+    <Compile Include="DataListSourceBase.cs" />
+    <Compile Include="DataListSourceOperatorBase.cs" />
+    <Compile Include="DataListSource_Skip.cs" />
+    <Compile Include="DataListSource_Take.cs" />
+    <Compile Include="DataListUpdate.cs" />
+    <Compile Include="DataListUpdateAction.cs" />
+    <Compile Include="Helpers\ResourceHelper.cs" />
+    <Compile Include="IDataListSource.cs" />
+    <Compile Include="IncrementalLoadingDataList.cs" />
+    <Compile Include="Internal\DelegateDisposable.cs" />
+    <Compile Include="Internal\WeakReferenceList.cs" />
+    <Compile Include="IUpdatableCollection.cs" />
+    <Compile Include="ObservableVector.cs" />
+    <Compile Include="PagedDataListSource.cs" />
+    <Compile Include="PageVirtualizingList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleDataListSource.cs" />
+    <Compile Include="VirtualizingDataList.cs" />
+    <Compile Include="VirtualizingList.cs" />
+    <Compile Include="VirtualizingVectorBase.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
