@@ -1,20 +1,21 @@
 ﻿<?xml version="1.0"?>
 <package>
   <metadata>
-    <id>$id$</id>
-    <version>$version$</version>
-    <title>$title$</title>
-    <authors>$author$</authors>
-    <owners>$author$</owners>
+    <id>Okra.Data</id>
+    <version>0.9.6.1</version>
+    <title>Okra App Framework (Data Framework)</title>
+    <authors>Andrew Wilkinson</authors>
+    <owners>Andrew Wilkinson</owners>
     <licenseUrl>https://raw.githubusercontent.com/Andy-Wilkinson/Okra.Data/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/Andy-Wilkinson/Okra.Data</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
-    <releaseNotes>Formerly the Okra App Framework core assemblies</releaseNotes>
+    <description>The Okra App Framework is designed to support the development of .Net Windows 8 applications, in particular those following the MVVM pattern. This package contains the data assembly.</description>
+    <releaseNotes>Formerly part of the Okra App Framework core assemblies</releaseNotes>
     <copyright>Copyright 2014</copyright>
     <tags>Okra WinRT Windows8 Win8</tags>
   </metadata>
   <files>
+    <file src="bin\Release\Okra.Data.dll" target="lib\win\Okra.Data.dll" />
     <file src="bin\Release\Okra.Data.pri" target="lib\win\Okra.Data.pri" />
   </files>
 </package>
