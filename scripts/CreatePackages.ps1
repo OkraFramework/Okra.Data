@@ -1,5 +1,17 @@
-Import-Module -Name ".\HelperFunctions.psm1"
-Import-Module -Name ".\Invoke-MsBuild.psm1"
+# Move to the project root folder (parent from current script folder)
+
+function Get-ScriptDirectory
+{ 
+    $Invocation = (Get-Variable MyInvocation -Scope 1).Value 
+    Split-Path $Invocation.MyCommand.Path 
+}
+
+$rootFolder = (Get-Item (Get-ScriptDirectory)).Parent.FullName
+Set-Location $rootFolder
+
+# Import modules
+
+Import-Module -Name ".\scripts\Invoke-MsBuild.psm1"
 
 # Move to the project root folder (parent from current script folder)
 
