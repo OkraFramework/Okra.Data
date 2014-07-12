@@ -3,13 +3,13 @@
   <metadata>
     <id>Okra.Data</id>
     <version>0.9.7.0</version>
-    <title>Okra App Framework (Data Framework)</title>
+    <title>Okra Data Framework</title>
     <authors>Andrew Wilkinson</authors>
     <owners>Andrew Wilkinson</owners>
     <licenseUrl>https://raw.githubusercontent.com/Andy-Wilkinson/Okra.Data/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/Andy-Wilkinson/Okra.Data</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>The Okra App Framework is designed to support the development of .Net Windows 8 applications, in particular those following the MVVM pattern. This package contains the data assembly.</description>
+    <description>The Okra Data Framework is designed to assist in the development applications that display dynamic lists of data, in particular from web services.</description>
     <releaseNotes>Formerly part of the Okra App Framework core assemblies</releaseNotes>
     <copyright>Copyright 2014</copyright>
     <tags>Okra WinRT Windows8 Win8</tags>

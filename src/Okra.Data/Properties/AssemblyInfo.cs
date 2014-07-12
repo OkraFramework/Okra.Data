@@ -6,8 +6,8 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Okra App Framework (Data Framework)")]
-[assembly: AssemblyDescription("The Okra App Framework is designed to support the development of .Net Windows 8 applications, in particular those following the MVVM pattern. This package contains the data assembly.")]
+[assembly: AssemblyTitle("Okra Data Framework")]
+[assembly: AssemblyDescription("The Okra Data Framework is designed to assist in the development applications that display dynamic lists of data, in particular from web services.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Andrew Wilkinson")]
 [assembly: AssemblyProduct("Okra.Data")]
