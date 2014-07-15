@@ -1,6 +1,6 @@
-Okra.Data
-=========
+Okra Data Framework
+===================
 
-Okra App Framework - Data Framework
+This repository contains the Data Framework portion of the Okra Framework.
 
-This repository contains the Data Framework portion of the Okra App Framework. For more information see http://okra.codeplex.com.
+For more information and documentation visit http://okraframework.github.io
