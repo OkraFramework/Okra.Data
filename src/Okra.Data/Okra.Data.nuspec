@@ -7,7 +7,7 @@
     <authors>Andrew Wilkinson</authors>
     <owners>Andrew Wilkinson</owners>
     <licenseUrl>https://raw.githubusercontent.com/Andy-Wilkinson/Okra.Data/master/LICENSE</licenseUrl>
-    <projectUrl>https://github.com/Andy-Wilkinson/Okra.Data</projectUrl>
+    <projectUrl>http://okraframework.github.io</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>The Okra Data Framework is designed to assist in the development applications that display dynamic lists of data, in particular from web services.</description>
     <releaseNotes>Formerly part of the Okra App Framework core assemblies</releaseNotes>
